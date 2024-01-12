@@ -43,7 +43,7 @@ class ThreadPoolWorker(Thread):
 				func(*args, **kargs)
 			except Exception, e:
 				print 'Args',func, args, kargs
-				print 'Exception',e
+				print('Exception',e)
 
 			# Mark task as completed (remove from queue)
 			self.tasks_queue.task_done()
