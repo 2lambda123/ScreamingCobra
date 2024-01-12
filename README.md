@@ -1,9 +1,17 @@
+# Issue and Potential Solutions
+
+# Troubleshooting Steps
+
 # F.A.Q
 
 # ScreamingCobra
 - Swiss knife for XSS on any URI
 - XSS Fuzzer & Finder
 - Any logic is valid logic in this software
+
+# Potential Solutions
+
+The potential solution for this issue is to check for the GitHub Actions configuration and ensure that all required configurations are in place.
 
 # License
 - EULA
@@ -62,7 +70,14 @@ The hash (#) character in a URI denotes the beginning of a URI fragment. Accordi
 - Fuzzing :
 - https://example.com.pk/pages.php?id=id=id=id=
 
-- Exclusives :
+- Exclusives
+
+# Troubleshooting Steps
+
+If the GitHub Actions run has failed, the following troubleshooting steps can be followed:
+1. Check the GitHub Actions run logs for any specific error message.
+2. Ensure that the required environment and dependencies are correctly set up.
+3. Verify that the necessary secrets and credentials are properly configured. :
 - https://example.com.pk/pages.php#
 - https://example.com.pk/pages/
 - https://example.com.pk/pages.php?id#
