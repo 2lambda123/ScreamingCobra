@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import logging
 from Queue import Queue
 from threading import Thread
 
