@@ -43,7 +43,7 @@ echo "                                                                          
 function linux() {
 echo -e "$red [$green+$red]$off Installing Python ...";
 pip install python2.7
-echo -e "$red [$green+$red]$off Installing Modules ...";
+echo -e "$red [$green+$red]$off Installing ScreamingCobra Modules ...";
 pip install -r requirements.txt
 pip install httplib2
 pip install mechanize
@@ -62,8 +62,8 @@ echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous 
     fi
 fi 
 
-echo -e "$red [$green+$red]$off Installing ...";
-echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
+echo -e "$red [$green+$red]$off Installing ScreamingCobra...";
+echo -e "$red [$green+$red]$off Creating Symbolic Link for ScreamingCobra...";
 echo -e ""
 python /usr/share/ScreamingCobra/ScreamingCobra1.py > "ScreamingCobra1";
 python /usr/share/ScreamingCobra/ScreamingCobra2.py > "ScreamingCobra2";
@@ -91,7 +91,7 @@ cp *.sh /usr/share/ScreamingCobra
 
 if [ -d "/usr/share/ScreamingCobra" ] ;
 then
-echo -e "$red [$green+$red]$off ScreamingCobra Successfully Installed, Starting";
+echo -e "$red [$green+$red]$off ScreamingCobra Successfully Installed and Ready to Use";
 sleep 2;
 ScreamingCobra
 else
@@ -103,7 +103,7 @@ fi
 if [ -d "/usr/bin/" ];then
 banner
 echo -e "$red [$green+$red]$off ScreamingCobra Will Be Installed In Your System";
-linux
+install_ScreamingCobra
 else
 echo -e "$red [$green+$red]$off ScreamingCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
