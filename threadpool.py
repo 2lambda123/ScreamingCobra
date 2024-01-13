@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-from Queue import Queue
+from queue import Queue
 from threading import Thread
+import logging
 
 # -------------------------------------
 class ThreadPoolWorker(Thread):
@@ -41,9 +42,9 @@ class ThreadPoolWorker(Thread):
 			#func(*args, **kargs)
 			try:
 				func(*args, **kargs)
-			except Exception, e:
-				print 'Args',func, args, kargs
-				print 'Exception',e
+			except Exception as e:
+				logging.error('Args %s %s %s', func, args, kargs)
+				logging.exception('Exception %s', e)
 
 			# Mark task as completed (remove from queue)
 			self.tasks_queue.task_done()
@@ -87,4 +88,4 @@ class ThreadPool:
 if __name__ == '__main__':
 # -------------------------------------
 
-	print 'Error : This python script cannot be run as a standalone program.'
+	logging 'Error : This python script cannot be run as a standalone program.'
