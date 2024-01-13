@@ -1,5 +1,7 @@
 import logging
 from threadpool import ThreadPool, ThreadPoolWorker, Queue
+import logging
+from unittest.mock import patch
 import unittest
 from Queue import Queue
 from unittest.mock import patch
