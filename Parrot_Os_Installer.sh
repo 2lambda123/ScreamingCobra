@@ -40,7 +40,7 @@ echo "                                                                          
 echo "                                                                                               ";
 }
 
-function linux() {
+function install_ScreamingCobra() {
 echo -e "$red [$green+$red]$off Installing Python ...";
 pip install python2.7
 echo -e "$red [$green+$red]$off Installing Modules ...";
